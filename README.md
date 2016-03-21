@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/anybox/etherdraw-docker.svg?branch=master)]
+(https://travis-ci.org/anybox/etherdraw-docker)
+
 Etherdraw docker image
 ======================
 
