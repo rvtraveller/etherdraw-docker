@@ -52,7 +52,7 @@ To get futhers informations about setting file, refer to [etherdraw]
 
 Then to run your container:
 ```
-docker run -it --rm -p 127.0.0.1:9002:9002 \
+docker run -d -p 127.0.0.1:9002:9002 \
        --name etherdraw --link pg_cluster:dbhost \
        -v ~/etherdraw-settings.json:/srv/etherdraw/draw/settings.json \
        anybox/etherdraw:develop
