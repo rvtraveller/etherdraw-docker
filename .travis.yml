@@ -18,6 +18,7 @@ before_script:
 
 script:
   - docker ps | grep -q $DOCKER_IMAGE_NAME
+  - sleep 2
   - curl "http://localhost:9002"
 
 after_success:
