@@ -14,11 +14,11 @@ install: true
 
 before_script:
   - docker build -t $DOCKER_IMAGE_NAME -f $VERSION/Dockerfile .
-  - docker run -d -p 0.0.0.0:9002:9002 --name draw $DOCKER_IMAGE_NAME
+  - docker run -d -p 9002:9002 --name draw $DOCKER_IMAGE_NAME
 
 script:
   - docker ps | grep -q $DOCKER_IMAGE_NAME
-  - tests/test_etherdraw.sh "http://localhost:9002"
+  - curl "http://localhost:9002"
 
 after_success:
   - if [ ! -z "$TRAVIS_PULL_REQUEST" ]; then docker login --email=$DOCKER_HUB_EMAIL --username=$DOCKER_HUB_USERNAME --password=$DOCKER_HUB_PASSWORD && docker tag $DOCKER_IMAGE_NAME:latest $DOCKER_IMAGE_NAME:$VERSION && docker push $DOCKER_IMAGE_NAME:$VERSION; fi
