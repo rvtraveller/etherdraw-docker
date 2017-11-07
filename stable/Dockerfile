@@ -23,6 +23,9 @@ RUN mkdir $HOME_DIR \
     && nvm alias default $NODE_VERSION \
     && nvm use default \
     && $HOME_DIR/draw/bin/installDeps.sh \
+    && mkdir $HOME_DIR/draw/ \
+    && mkdir $HOME_DIR/draw/configuration \
+    && ln -s configuration/settings.json settings.json \
     && chown -R etherdraw:etherdraw $HOME_DIR
 
 ENV NODE_PATH=$NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules \
