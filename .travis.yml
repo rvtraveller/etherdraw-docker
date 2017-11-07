@@ -2,7 +2,7 @@ sudo: required
 
 env:
   global:
-    - DOCKER_IMAGE_NAME=anybox/etherdraw
+    - DOCKER_IMAGE_NAME=rvtraveller/etherdraw
   matrix:
     - VERSION=stable
     - VERSION=develop
