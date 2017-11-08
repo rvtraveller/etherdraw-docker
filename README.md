@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/anybox/etherdraw-docker.svg?branch=master)]
-(https://travis-ci.org/anybox/etherdraw-docker)
+[![Build Status](https://travis-ci.org/rvtraveller/etherdraw-docker.svg?branch=master)]
+(https://travis-ci.org/rvtraveller/etherdraw-docker)
 
 Etherdraw docker image
 ======================
@@ -7,8 +7,8 @@ Etherdraw docker image
 [Etherdraw](https://github.com/JohnMcLear/draw.git) is a collaborative real-time
 drawing / painting / sketching web based tool.
 
-Docker images are hosted on [docker hub anybox/etherdraw]
-(https://hub.docker.com/r/anybox/etherdraw)
+Docker images are hosted on [docker hub rvtraveller/etherdraw]
+(https://hub.docker.com/r/rvtraveller/etherdraw)
 
 Those images are based on `debian:jessie`, builds are schedules with
 [nightli.es](https://nightli.es) and pushed to docker hub, this allow to
