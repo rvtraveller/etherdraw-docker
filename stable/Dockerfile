@@ -24,6 +24,7 @@ RUN mkdir $HOME_DIR \
     && nvm use default \
     && $HOME_DIR/draw/bin/installDeps.sh \
     && mkdir $HOME_DIR/draw/configuration \
+    && rm settings.json \
     && ln -s configuration/settings.json settings.json \
     && chown -R etherdraw:etherdraw $HOME_DIR
 
